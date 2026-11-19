@@ -25,7 +25,7 @@
   });
 
   var SUBURBS = {
-    'north-epping': 'North Epping',
+'north-epping': 'North Epping',
     'westleigh': 'Westleigh',
     'west-pennant-hills': 'West Pennant Hills',
     'beecroft': 'Beecroft',
