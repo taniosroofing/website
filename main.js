@@ -76,7 +76,7 @@
       var sub = flyer.querySelector('[data-flyer-sub]');
       if (sub) {
         sub.textContent = 'Thanks for picking up our ' + name +
-          ' flyer. Book a free drone inspection for a tile-to-Colorbond or metal-to-metal re-roof, and get a fixed-price written quote.';
+          ' flyer. Request an obligation-free quote for a tile-to-Colorbond or metal-to-metal re-roof, and get a fixed-price written quote.';
       }
       var linkWrap = flyer.querySelector('.flyer-suburb-link');
       var link = flyer.querySelector('[data-flyer-suburb-link]');
