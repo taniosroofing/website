@@ -289,7 +289,11 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
   $('mSum').textContent = Q.job.summary;
   $('pNote').textContent = Q.pricingNote || '';
   $('revSum').textContent = Q.reviewSummary || '';
-  $('wWork').textContent = 'Every job comes with our written workmanship warranty: ' + Q.warranty.standardYears + ' years on Essential and Recommended, ' + Q.warranty.premiumYears + ' years on Premium.';
+  if (Q.warranty.standardYears === Q.warranty.premiumYears) {
+    $('wWork').textContent = 'Every job comes with our written ' + Q.warranty.standardYears + '-year workmanship warranty.';
+  } else {
+    $('wWork').textContent = 'Every job comes with our written workmanship warranty: ' + Q.warranty.standardYears + ' years on Essential and Recommended, ' + Q.warranty.premiumYears + ' years on Premium.';
+  }
 
   // ---- tiers
   var tg = $('toggle'), cards = $('cards'), opt = $('fOpt');
