@@ -357,7 +357,7 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
   }
   render();
 
-  // ---- tracking: GA4 events + optional free phone ping (ntfy.sh, no account)
+  // ---- tracking: GA4 events + optional phone ping (ntfy.sh, no account)
   function track(name, extra){
     if (!Q.notify || !Q.notify.ga4 || typeof gtag !== 'function') return;
     var p = { quote_id: Q.quoteId, preview: preview ? 1 : 0 }; for (var k in extra) p[k]=extra[k];
